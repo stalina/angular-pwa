@@ -1,10 +1,24 @@
-import { Component } from '@angular/core';
+import { PwaService } from './services/pwa.service';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'angular-pwa';
+export class AppComponent implements OnInit {
+
+  showUpdate = false;
+
+  constructor(public pwa: PwaService) {}
+
+  ngOnInit() {
+    this.pwa.updateObservable.subscribe(event => {
+      this.showUpdate = true;
+    });
+  }
+
+  reload() {
+    window.location.reload();
+  }
 }

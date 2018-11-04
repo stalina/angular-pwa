@@ -4,6 +4,9 @@
     <span class="spacer"></span>
     <span>Yay, Material in Angular!</span>
     <span class="spacer"></span>
+    <button mat-icon-button *ngIf="showUpdate" (click)="reload()">
+      <mat-icon>autorenew</mat-icon>
+    </button>
     <button mat-icon-button [mat-menu-trigger-for]="menu">
       <mat-icon>more_vert</mat-icon>
     </button>
