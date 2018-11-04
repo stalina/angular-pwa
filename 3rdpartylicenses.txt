@@ -319,6 +319,9 @@ MIT
 @angular/common
 MIT
 
+@angular/service-worker
+MIT
+
 @angular/platform-browser
 MIT
 
@@ -350,21 +353,18 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-@angular/material/toolbar
-
-@angular/material/icon
-
 @angular/animations
 MIT
 
 @angular/material/button
 
+@angular/material/icon
+
+@angular/material/toolbar
+
 @angular/material/menu
 
 @angular/material/card
-
-@angular/service-worker
-MIT
 
 zone.js
 MIT
