@@ -10,15 +10,15 @@ export class AppComponent implements OnInit {
 
   showUpdate = false;
 
-  constructor(public pwa: PwaService) {}
+  constructor(private pwa: PwaService) {}
 
   ngOnInit() {
-    this.pwa.updateObservable.subscribe(event => {
+    this.pwa.swUpdate.available.subscribe(event => {
       this.showUpdate = true;
     });
   }
 
   reload() {
-    window.location.reload();
+    this.pwa.swUpdate.activateUpdate().then(() => document.location.reload());
   }
 }

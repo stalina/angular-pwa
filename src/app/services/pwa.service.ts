@@ -7,15 +7,5 @@ import { Observable } from 'rxjs';
 })
 export class PwaService {
 
-  deferedPromptEvent: any;
-  updateObservable: Observable<UpdateAvailableEvent>;
-
-  constructor(private swUpdate: SwUpdate) {
-
-    this.updateObservable = swUpdate.available;
-
-    window.addEventListener('beforeinstallprompt', (event: any) => {
-      this.deferedPromptEvent = event;
-    });
-   }
+  constructor(public swUpdate: SwUpdate) { }
 }
