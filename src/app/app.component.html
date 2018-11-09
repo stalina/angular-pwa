@@ -4,10 +4,10 @@
     <span class="spacer"></span>
     <span>PWA features</span>
     <span class="spacer"></span>
-    <button mat-icon-button *ngIf="showUpdate" (click)="reload()">
+    <button mat-icon-button *ngIf="showUpdate" (click)="reload()"  aria-label="update application">
       <mat-icon>autorenew</mat-icon>
     </button>
-    <button mat-icon-button [mat-menu-trigger-for]="menu">
+    <button mat-icon-button [mat-menu-trigger-for]="menu"  aria-label="Display menu">
       <mat-icon>more_vert</mat-icon>
     </button>
   </mat-toolbar>
@@ -17,10 +17,9 @@
   </mat-menu>
 
   <mat-card>
-    <button mat-button>All</button>
-    <button mat-raised-button>Of</button>
-    <button mat-raised-button color="primary">The</button>
-    <button mat-raised-button color="accent">Buttons</button>
+    <button mat-button aria-label="All">All</button>
+    <button mat-raised-button aria-label="Of">Of</button>
+    <button mat-raised-button aria-label="The" color="primary">The</button>
   </mat-card>
 
   <span class="done">
