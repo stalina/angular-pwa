@@ -353,6 +353,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
+@angular/material/card
+
 @angular/animations
 MIT
 
@@ -363,8 +365,6 @@ MIT
 @angular/material/toolbar
 
 @angular/material/menu
-
-@angular/material/card
 
 zone.js
 MIT

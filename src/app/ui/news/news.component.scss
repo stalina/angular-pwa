@@ -1,0 +1,24 @@
+.example-card {
+  max-width: 200px;
+}
+.example-header-image {
+  background-image: url('/assets/text-lines.png');
+  background-size: cover;
+}
+.mat-card-header-text{
+  width: 78%
+}
+.title{
+  overflow-wrap: break-word;
+}
+.grid {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+}
+.grid-cell {
+  flex: 1;
+  margin : 1%;
+}

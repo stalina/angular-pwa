@@ -14,15 +14,19 @@ import {
 } from '@angular/material';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { HttpClientModule } from '@angular/common/http';
+import { NewsComponent } from './ui/news/news.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NewsComponent
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    BrowserModule,
+    HttpClientModule,
     MatButtonModule,
     MatMenuModule,
     MatToolbarModule,
